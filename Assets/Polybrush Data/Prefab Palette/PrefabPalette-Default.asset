@@ -63,7 +63,7 @@ MonoBehaviour:
     name: SM_Env_Bush_02
   - gameObject: {fileID: 173370, guid: 6dbee37772836d54791ca98b89b5b9cc, type: 3}
     settings:
-      m_Strength: 15
+      m_Strength: 91.21428
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -79,7 +79,7 @@ MonoBehaviour:
     name: SM_Env_PalmBush_03
   - gameObject: {fileID: 157068, guid: fd74fe2d07b81654a912e2f818651222, type: 3}
     settings:
-      m_Strength: 15
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -95,7 +95,7 @@ MonoBehaviour:
     name: SM_Env_Grass_01
   - gameObject: {fileID: 134748, guid: ea06b905c6c5ef847bc6799488bf8980, type: 3}
     settings:
-      m_Strength: 15
+      m_Strength: 58.153065
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -429,3 +429,35 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: SM_Env_Seaweed_01
+  - gameObject: {fileID: 170250, guid: c88bbc5d0ae3ae044ac76ec371fef8b0, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 0.5, y: 2}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: SM_Env_GroundLeaves_01
+  - gameObject: {fileID: 160476, guid: 4269b034da6379a42a15644c42562899, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 0.5, y: 2}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: SM_Env_GroundLeaves_02
