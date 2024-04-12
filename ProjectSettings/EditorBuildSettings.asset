@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Susanne/Main Menu.unity
+    guid: aae84cce3bfce5943993fdee5c6f6f56
+  - enabled: 1
+    path: Assets/Susanne/Symbol Cave.unity
+    guid: 19368bdf85d3e2543a634599171cc52e
+  - enabled: 1
+    path: Assets/Final Scene/Final Scene.unity
+    guid: a8b46a577956f9e4d80290feff8614fb
   m_configObjects: {}
