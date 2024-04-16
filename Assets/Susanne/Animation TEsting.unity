@@ -421,6 +421,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.536636, y: 0.42457685, z: 7.542955}
   m_Center: {x: 0, y: 0.21228845, z: 0.00000095367426}
+--- !u!1001 &290779013045149206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6498827806486342703, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_Name
+      value: Fog Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.8524356
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1154783
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072343405127082471, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c19ace571836884592ec5bfbf3c3f48, type: 3}
 --- !u!1001 &3484554614135253919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -815,6 +872,10 @@ PrefabInstance:
       propertyPath: listener
       value: 
       objectReference: {fileID: 990825020}
+    - target: {fileID: 5145273215829260323, guid: 65f9de52af140cb47bfe3e0310acff61, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0aa389718e18b484283658da1698bfaa, type: 3}
     - target: {fileID: 6214381925920702099, guid: 65f9de52af140cb47bfe3e0310acff61, type: 3}
       propertyPath: m_Name
       value: MoonSoundSource
@@ -954,3 +1015,4 @@ SceneRoots:
   - {fileID: 4774137975655087070}
   - {fileID: 3484554614135253919}
   - {fileID: 6318483984740218824}
+  - {fileID: 290779013045149206}
