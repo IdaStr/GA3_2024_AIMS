@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundProximity : MonoBehaviour
 {
-    public Transform listener;  // Reference to the listener (e.g., player)
+    public Transform listener; 
 
     private AudioSource audioSource;
 
@@ -17,10 +17,10 @@ public class SoundProximity : MonoBehaviour
     {
         if (listener != null && audioSource != null)
         {
-            // Calculate the distance between the listener and the sound source
+            
             float distance = Vector3.Distance(listener.position, transform.position);
 
-            // Adjust the volume based on distance
+            
             audioSource.volume = Mathf.Clamp01(1f - (distance - audioSource.minDistance) / (audioSource.maxDistance - audioSource.minDistance));
         }
     }
