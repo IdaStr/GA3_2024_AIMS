@@ -1,42 +1,46 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System.Collections.Generic;
 
 public class NPCInteraction : MonoBehaviour
 {
     public GameObject interactionButton; // UI element for interaction button
     public GameObject interactionText;   // UI element for interaction text
     public string npcName = "NPC";       // Name of the NPC
-    public string dialogueText;          // Text to display when interacting
-    public AudioClip interactionAudio;   // Audio clip to play when interacting
+    public List<Dialogue> dialogues;     // List of dialogues to display with associated audio clips
 
-    private bool isPlayerInRange;        // Flag to track if player is in range for interaction
+    private bool playerInRange;          // Flag to track if player is in range
+    private int currentDialogueIndex;    // Index of the current dialogue
     private bool hasInteracted;          // Flag to track if interaction has occurred
-    private AudioSource audioSource;     // Reference to AudioSource component
+
+    private AudioSource audioSource;     // Audio source component for playing dialogue audio
 
     private void Start()
-    {
-        interactionButton.SetActive(false); // Ensure interaction button is initially hidden
-        interactionText.SetActive(false);   // Ensure interaction text is initially hidden
 
-        // Get or add AudioSource component
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-        {
+
+    {
+        
             audioSource = gameObject.AddComponent<AudioSource>();
-        }
-        audioSource.clip = interactionAudio;
+        
+        // Ensure interaction button and text are initially hidden
+        interactionButton.SetActive(false);
+        interactionText.SetActive(false);
+        currentDialogueIndex = 0; // Start at the beginning of the dialogues list
+
+        // Get the AudioSource component from the GameObject
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            isPlayerInRange = true;
-
-            // Show interaction button only if player is in range and interaction has not occurred
+            playerInRange = true;
             if (!hasInteracted)
             {
-                interactionButton.SetActive(true);
+                interactionButton.SetActive(true); // Show interaction button
             }
         }
     }
@@ -45,42 +49,54 @@ public class NPCInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isPlayerInRange = false;
-            // Hide interaction button when player exits NPC range
-            interactionButton.SetActive(false);
+            playerInRange = false;
+            interactionButton.SetActive(false); // Hide interaction button
+        }
+    }
+
+    private void Update()
+    {
+        // Check for interaction key (e.g., E) press
+        if (playerInRange && !hasInteracted && Input.GetKeyDown(KeyCode.E))
+        {
+            Interact(); // Trigger interaction if player is in range and presses E
         }
     }
 
     public void Interact()
     {
-        if (isPlayerInRange && !hasInteracted)
+        if (playerInRange && !hasInteracted && currentDialogueIndex < dialogues.Count)
         {
             // Hide interaction button
             interactionButton.SetActive(false);
 
-            // Show interaction text with NPC name and dialogue
+            // Show interaction text with NPC name and current dialogue
             interactionText.SetActive(true);
-            TMPro.TextMeshProUGUI textMesh = interactionText.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-            if (textMesh != null)
+            string dialogueText = $"{npcName}: {dialogues[currentDialogueIndex].text}";
+            interactionText.GetComponentInChildren<TextMeshProUGUI>().text = dialogueText;
+
+            // Play interaction audio for the current dialogue
+            if (audioSource != null && dialogues[currentDialogueIndex].audioClip != null)
             {
-                textMesh.text = npcName + ": " + dialogueText;
+                audioSource.clip = dialogues[currentDialogueIndex].audioClip;
+                audioSource.Play();
             }
 
-            // Play interaction audio
-            if (interactionAudio != null && audioSource != null)
+            // Move to the next dialogue
+            currentDialogueIndex++;
+
+            // If all dialogues have been displayed, mark interaction as complete
+            if (currentDialogueIndex >= dialogues.Count)
             {
-                audioSource.PlayOneShot(interactionAudio);
-                Invoke("EndInteraction", interactionAudio.length); // Automatically end interaction after audio length
-                hasInteracted = true; // Set interaction flag to true
+                hasInteracted = true;
             }
         }
     }
+}
 
-    private void EndInteraction()
-    {
-        // Hide interaction text
-        interactionText.SetActive(false);
-        // Reset interaction state
-        hasInteracted = false;
-    }
+[System.Serializable]
+public class Dialogue
+{
+    public string text;       // Text to display for this dialogue
+    public AudioClip audioClip; // Audio clip to play for this dialogue
 }

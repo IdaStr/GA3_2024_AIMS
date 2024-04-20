@@ -742,8 +742,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -467}
-  m_SizeDelta: {x: 800, y: 50}
+  m_AnchoredPosition: {x: 5, y: -422}
+  m_SizeDelta: {x: 1510.0552, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1247960191
 MonoBehaviour:
@@ -765,7 +765,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hell there my name is Johnny
+  m_text: I want to test out this text I want to test out this text I want to test
+    I want to test out this text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -798,8 +799,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 2
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1007,10 +1008,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 0.7587822
+  m_Height: 2.2772286
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.6386178, z: 0.017691392}
 --- !u!114 &2014883455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1025,9 +1026,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionButton: {fileID: 1278989941}
   interactionText: {fileID: 1247960189}
-  npcName: MoonCaveNPC
-  dialogueText: Hello there Handsomewoman
-  interactionAudio: {fileID: 8300000, guid: 2e13fc1b4ebfceb4dbca2098555a7183, type: 3}
+  npcName: Unknown
+  dialogues:
+  - text: Hello
+    audioClip: {fileID: 8300000, guid: 69ad403497443e34299866d823575eab, type: 3}
+  - text: Bitch
+    audioClip: {fileID: 8300000, guid: 0aa389718e18b484283658da1698bfaa, type: 3}
 --- !u!1001 &290779013045149206
 PrefabInstance:
   m_ObjectHideFlags: 0

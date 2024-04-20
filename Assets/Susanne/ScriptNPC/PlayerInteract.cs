@@ -19,7 +19,8 @@ public class PlayerInteraction : MonoBehaviour
                 NPCInteraction npcInteraction = hit.collider.GetComponent<NPCInteraction>();
                 if (npcInteraction != null)
                 {
-                    npcInteraction.Interact(); // Trigger NPC interaction
+                    // Trigger NPC interaction
+                    npcInteraction.Interact();
                 }
             }
         }
