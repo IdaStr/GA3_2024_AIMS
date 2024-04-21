@@ -261,7 +261,6 @@ GameObject:
   - component: {fileID: 7526187853622801184}
   - component: {fileID: 6328818627852202423}
   - component: {fileID: 5338940249322209615}
-  - component: {fileID: 6420641696587775431}
   m_Layer: 0
   m_Name: SM_Env_GrassPatch_01 (5)
   m_TagString: Untagged
@@ -334,28 +333,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6420641696587775431
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2974872867925709692}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43933237895342842, guid: 350d5cab0c1a1e54c9429b175677ec6d, type: 2}
 --- !u!1 &4908488360740137668
 GameObject:
   m_ObjectHideFlags: 0
