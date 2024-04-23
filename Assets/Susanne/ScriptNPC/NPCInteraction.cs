@@ -6,31 +6,24 @@ using System.Collections.Generic;
 
 public class NPCInteraction : MonoBehaviour
 {
-    public GameObject interactionButton; 
-    public GameObject interactionText;   
-    public string npcName = "NPC";       
-    public List<Dialogue> dialogues;     
+    public GameObject interactionButton;
+    public GameObject interactionText;
+    public List<Dialogue> dialogues;
 
-    private bool playerInRange;          
-    private int currentDialogueIndex;    
-    private bool hasInteracted;          
+    public float interactionDistance = 5f; 
 
-    private AudioSource audioSource;     
+    private bool playerInRange;
+    private int currentDialogueIndex;
+    private bool hasInteracted;
+
+    private AudioSource audioSource;
 
     private void Start()
-
-
     {
-        
-            audioSource = gameObject.AddComponent<AudioSource>();
-        
-        
+        audioSource = gameObject.AddComponent<AudioSource>();
         interactionButton.SetActive(false);
         interactionText.SetActive(false);
-        currentDialogueIndex = 0; 
-
-        
-        audioSource = GetComponent<AudioSource>();
+        currentDialogueIndex = 0;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,7 +33,7 @@ public class NPCInteraction : MonoBehaviour
             playerInRange = true;
             if (!hasInteracted)
             {
-                interactionButton.SetActive(true); 
+                interactionButton.SetActive(true);
             }
         }
     }
@@ -50,16 +43,27 @@ public class NPCInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
-            interactionButton.SetActive(false); 
+            interactionButton.SetActive(false);
+            interactionText.SetActive(false);
         }
     }
 
     private void Update()
     {
-        
-        if (playerInRange && !hasInteracted && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && !hasInteracted)
         {
-            Interact(); 
+            float distance = Vector3.Distance(transform.position, Camera.main.transform.position);
+            if (distance > interactionDistance)
+            {
+                interactionButton.SetActive(false);
+                interactionText.SetActive(false);
+                return;
+            }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Interact();
+            }
         }
     }
 
@@ -67,25 +71,20 @@ public class NPCInteraction : MonoBehaviour
     {
         if (playerInRange && !hasInteracted && currentDialogueIndex < dialogues.Count)
         {
-            
             interactionButton.SetActive(false);
-
-            
             interactionText.SetActive(true);
-            string dialogueText = $"{npcName}: {dialogues[currentDialogueIndex].text}";
+
+            string dialogueText = $"{dialogues[currentDialogueIndex].npcName}: {dialogues[currentDialogueIndex].text}";
             interactionText.GetComponentInChildren<TextMeshProUGUI>().text = dialogueText;
 
-            
             if (audioSource != null && dialogues[currentDialogueIndex].audioClip != null)
             {
                 audioSource.clip = dialogues[currentDialogueIndex].audioClip;
                 audioSource.Play();
             }
 
-            
             currentDialogueIndex++;
 
-           
             if (currentDialogueIndex >= dialogues.Count)
             {
                 hasInteracted = true;
@@ -97,6 +96,7 @@ public class NPCInteraction : MonoBehaviour
 [System.Serializable]
 public class Dialogue
 {
-    public string text;       
-    public AudioClip audioClip; 
+    public string npcName; 
+    public string text;
+    public AudioClip audioClip;
 }
