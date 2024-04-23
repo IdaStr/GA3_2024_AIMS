@@ -6,16 +6,16 @@ using System.Collections.Generic;
 
 public class NPCInteraction : MonoBehaviour
 {
-    public GameObject interactionButton; // UI element for interaction button
-    public GameObject interactionText;   // UI element for interaction text
-    public string npcName = "NPC";       // Name of the NPC
-    public List<Dialogue> dialogues;     // List of dialogues to display with associated audio clips
+    public GameObject interactionButton; 
+    public GameObject interactionText;   
+    public string npcName = "NPC";       
+    public List<Dialogue> dialogues;     
 
-    private bool playerInRange;          // Flag to track if player is in range
-    private int currentDialogueIndex;    // Index of the current dialogue
-    private bool hasInteracted;          // Flag to track if interaction has occurred
+    private bool playerInRange;          
+    private int currentDialogueIndex;    
+    private bool hasInteracted;          
 
-    private AudioSource audioSource;     // Audio source component for playing dialogue audio
+    private AudioSource audioSource;     
 
     private void Start()
 
@@ -24,12 +24,12 @@ public class NPCInteraction : MonoBehaviour
         
             audioSource = gameObject.AddComponent<AudioSource>();
         
-        // Ensure interaction button and text are initially hidden
+        
         interactionButton.SetActive(false);
         interactionText.SetActive(false);
-        currentDialogueIndex = 0; // Start at the beginning of the dialogues list
+        currentDialogueIndex = 0; 
 
-        // Get the AudioSource component from the GameObject
+        
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -40,7 +40,7 @@ public class NPCInteraction : MonoBehaviour
             playerInRange = true;
             if (!hasInteracted)
             {
-                interactionButton.SetActive(true); // Show interaction button
+                interactionButton.SetActive(true); 
             }
         }
     }
@@ -50,16 +50,16 @@ public class NPCInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
-            interactionButton.SetActive(false); // Hide interaction button
+            interactionButton.SetActive(false); 
         }
     }
 
     private void Update()
     {
-        // Check for interaction key (e.g., E) press
+        
         if (playerInRange && !hasInteracted && Input.GetKeyDown(KeyCode.E))
         {
-            Interact(); // Trigger interaction if player is in range and presses E
+            Interact(); 
         }
     }
 
@@ -67,25 +67,25 @@ public class NPCInteraction : MonoBehaviour
     {
         if (playerInRange && !hasInteracted && currentDialogueIndex < dialogues.Count)
         {
-            // Hide interaction button
+            
             interactionButton.SetActive(false);
 
-            // Show interaction text with NPC name and current dialogue
+            
             interactionText.SetActive(true);
             string dialogueText = $"{npcName}: {dialogues[currentDialogueIndex].text}";
             interactionText.GetComponentInChildren<TextMeshProUGUI>().text = dialogueText;
 
-            // Play interaction audio for the current dialogue
+            
             if (audioSource != null && dialogues[currentDialogueIndex].audioClip != null)
             {
                 audioSource.clip = dialogues[currentDialogueIndex].audioClip;
                 audioSource.Play();
             }
 
-            // Move to the next dialogue
+            
             currentDialogueIndex++;
 
-            // If all dialogues have been displayed, mark interaction as complete
+           
             if (currentDialogueIndex >= dialogues.Count)
             {
                 hasInteracted = true;
@@ -97,6 +97,6 @@ public class NPCInteraction : MonoBehaviour
 [System.Serializable]
 public class Dialogue
 {
-    public string text;       // Text to display for this dialogue
-    public AudioClip audioClip; // Audio clip to play for this dialogue
+    public string text;       
+    public AudioClip audioClip; 
 }
