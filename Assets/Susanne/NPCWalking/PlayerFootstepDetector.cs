@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(FootstepManager))] // Ensure FootstepManager component is present on the same GameObject
+[RequireComponent(typeof(FootstepManager))] 
 public class PlayerFootstepDetector : MonoBehaviour
 {
     private FootstepManager footstepManager;
@@ -10,7 +10,7 @@ public class PlayerFootstepDetector : MonoBehaviour
 
     void Start()
     {
-        // Get the FootstepManager component from the same GameObject
+      
         footstepManager = GetComponent<FootstepManager>();
         if (footstepManager == null)
         {
@@ -20,7 +20,7 @@ public class PlayerFootstepDetector : MonoBehaviour
 
     void Update()
     {
-        // Detect player movement and trigger footstep sounds inside collider
+       
         if (isInsideCollider && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0))
         {
             footstepManager.StartFootsteps();
@@ -34,7 +34,7 @@ public class PlayerFootstepDetector : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // Check if the player enters the collider
+        
         if (other.CompareTag("FootstepCollider"))
         {
             isInsideCollider = true;
@@ -43,11 +43,11 @@ public class PlayerFootstepDetector : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        // Check if the player exits the collider
+       
         if (other.CompareTag("FootstepCollider"))
         {
             isInsideCollider = false;
-            footstepManager.StopFootsteps(); // Stop footstep sounds if player exits collider
+            footstepManager.StopFootsteps(); 
         }
     }
 }
