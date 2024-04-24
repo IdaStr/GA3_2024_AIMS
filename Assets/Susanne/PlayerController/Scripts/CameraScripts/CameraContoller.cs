@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraContoller : MonoBehaviour
 {
@@ -11,10 +9,10 @@ public class CameraContoller : MonoBehaviour
 
     [Header("Camera Settings")]
     [Range(0f, 20f)]
-	public float mouseSensitivity = 10;
+    public float mouseSensitivity = 10;
     public float dstFromTarget = 2;
-	public Vector2 pitchMinMax = new Vector2(-40, 85);
-	public float rotationSmoothTime = .12f;
+    public Vector2 pitchMinMax = new Vector2(-40, 85);
+    public float rotationSmoothTime = .12f;
 
     [Header("Camera Breathing Offsets (Headbob / Breathing)")]
     [Range(0f, 0.5f)]
@@ -34,11 +32,11 @@ public class CameraContoller : MonoBehaviour
     [Header("Cursor Check")]
     public bool lockCursor;
 
-	Vector3 rotationSmoothVelocity;
-	Vector3 currentRotation;
+    Vector3 rotationSmoothVelocity;
+    Vector3 currentRotation;
 
-	float yaw;
-	float pitch;
+    float yaw;
+    float pitch;
 
     private bool isPlayerMoving;
     private PlayerController playerController;
@@ -52,10 +50,10 @@ public class CameraContoller : MonoBehaviour
         cameraPos = this.gameObject.transform;
 
         if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-			Cursor.visible = false;
-		}
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     // Update is called once per frame
@@ -65,41 +63,48 @@ public class CameraContoller : MonoBehaviour
         CameraBreathMovement();
     }
 
-    private void LateUpdate() {
+    private void LateUpdate()
+    {
+
+
         CameraMovement();
+
+
     }
 
     void HeadBob(float pos_z, float pos_x_intensity, float pos_y_intensity)
     {
-        cameraPos.localPosition = cameraPos.localPosition + new Vector3 (Mathf.Cos(pos_z) * pos_x_intensity, Mathf.Sin(pos_z) * pos_y_intensity, 0);
+        cameraPos.localPosition = cameraPos.localPosition + new Vector3(Mathf.Cos(pos_z) * pos_x_intensity, Mathf.Sin(pos_z) * pos_y_intensity, 0);
     }
 
     void CameraMovement()
     {
-		yaw += Input.GetAxis("Mouse X") * mouseSensitivity;
-		pitch -= Input.GetAxis("Mouse Y") * mouseSensitivity;
-		pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
+        yaw += Input.GetAxis("Mouse X") * mouseSensitivity;
+        pitch -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+        pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
 
-		currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
-		transform.eulerAngles = currentRotation;
+        currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
+        transform.eulerAngles = currentRotation;
 
-		transform.position = target.transform.position - transform.forward * dstFromTarget;
+        transform.position = target.transform.position - transform.forward * dstFromTarget;
     }
 
     void CameraBreathMovement()
     {
-        if(breathingFrequency > 0)
+        if (breathingFrequency > 0)
         {
-                    if(playerController.isMoving)
-        {
-            HeadBob(breathingFrequency, runningCameraSideOffsetSlider,runningCameraUpDownOffsetSlider);
-            breathingFrequency += Time.deltaTime;
-        }
-        else
-        {
-            HeadBob(breathingFrequency, cameraSideOffsetSlider, cameraUpDownOffsetSlider);
-            breathingFrequency += Time.deltaTime;
-        }
+            if (playerController.isMoving)
+            {
+                HeadBob(breathingFrequency, runningCameraSideOffsetSlider, runningCameraUpDownOffsetSlider);
+                breathingFrequency += Time.deltaTime;
+            }
+            else
+            {
+                HeadBob(breathingFrequency, cameraSideOffsetSlider, cameraUpDownOffsetSlider);
+                breathingFrequency += Time.deltaTime;
+            }
         }
     }
+
+
 }
