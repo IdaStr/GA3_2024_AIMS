@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7413808639353842922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7967109286061821206}
+  m_Layer: 0
+  m_Name: IslandNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7967109286061821206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7413808639353842922}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.16, y: 1.3835502, z: 4.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6031404317538810244}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8367414758683274900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7967109286061821206}
+    m_Modifications:
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02833724
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1495502
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.13629818
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771617103611364595, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      propertyPath: m_Name
+      value: Character_Pirate_Blackbeard_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3771617103611364595, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3383370980222933220}
+    - targetCorrespondingSourceObject: {fileID: 3771617103611364595, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5189484248880768148}
+  m_SourcePrefab: {fileID: 100100000, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+--- !u!1 &4632091468753168999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3771617103611364595, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+  m_PrefabInstance: {fileID: 8367414758683274900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3383370980222933220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4632091468753168999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917c71644d8f753458d66266717bd6ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionButton: {fileID: 0}
+  interactionText: {fileID: 0}
+  dialogues:
+  - npcName: Captain
+    text: I see you standing there, blind as a parrot you are.
+    audioClip: {fileID: 8300000, guid: a8d968ef7aa87064fae3d251682beee2, type: 3}
+  - npcName: Captain
+    text: Never has any pirate left this Isle, you are no exception.
+    audioClip: {fileID: 8300000, guid: e7fb944904529de4ba155e20432e378d, type: 3}
+  - npcName: Captain
+    text: Over there, the cave. There you must venture.
+    audioClip: {fileID: 8300000, guid: ee3c9417202201447b3d2815c7455d0b, type: 3}
+  interactionDistance: 5
+--- !u!136 &5189484248880768148
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4632091468753168999}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0706711
+  m_Height: 2.4035244
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.70176244, z: 0.009142436}
+--- !u!4 &6031404317538810244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2858903021302388496, guid: 9cc8997db61943945a103f3db17809a1, type: 3}
+  m_PrefabInstance: {fileID: 8367414758683274900}
+  m_PrefabAsset: {fileID: 0}

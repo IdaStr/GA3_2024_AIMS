@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &23746397708573289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3169343155129988316}
+  m_Layer: 0
+  m_Name: MoonCaveNPC's
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3169343155129988316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23746397708573289}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.1, y: 1.9448093, z: 5.217174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1000352588711381698}
+  - {fileID: 2416876596443907705}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3661390390562528162
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3169343155129988316}
+    m_Modifications:
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1230834
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7468094
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.40282583
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648575845210012410, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+      propertyPath: m_Name
+      value: Cave Moon Man2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+--- !u!4 &1000352588711381698 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4552620564393152864, guid: 3794fbc327a50bf4c94789d7e047f977, type: 3}
+  m_PrefabInstance: {fileID: 3661390390562528162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4710265090786633061
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3169343155129988316}
+    m_Modifications:
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0609164
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7098093
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4428258
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353928410551025956, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      propertyPath: m_Name
+      value: Cave Moon Man
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7353928410551025956, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2393943670680434359}
+    - targetCorrespondingSourceObject: {fileID: 7353928410551025956, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 958510957886195315}
+  m_SourcePrefab: {fileID: 100100000, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+--- !u!4 &2416876596443907705 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6977273540105741084, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+  m_PrefabInstance: {fileID: 4710265090786633061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2832869486414963777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7353928410551025956, guid: 620695e0c12ca2b47a7754eaa3be2573, type: 3}
+  m_PrefabInstance: {fileID: 4710265090786633061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &2393943670680434359
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2832869486414963777}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.7587822
+  m_Height: 2.2772286
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.6386178, z: 0.017691392}
+--- !u!114 &958510957886195315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2832869486414963777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917c71644d8f753458d66266717bd6ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionButton: {fileID: 0}
+  interactionText: {fileID: 0}
+  dialogues:
+  - npcName: Unknown Pirate
+    text: He saw us, yet he can't see
+    audioClip: {fileID: 8300000, guid: cd793e2cc8354ec40bcfad1f45935968, type: 3}
+  - npcName: Unknown Pirate 2
+    text: He will see, but he must know
+    audioClip: {fileID: 8300000, guid: 70b9481c90495da40aad2903fe807b12, type: 3}
+  - npcName: 'Unknown Pirate '
+    text: Pirate you are, as were I. Hungry we all were
+    audioClip: {fileID: 8300000, guid: f28fe8379eca385488b0d8dfba613a80, type: 3}
+  - npcName: Unknown Pirate 2
+    text: Ay! Food we saw, food we ate. But I did not see
+    audioClip: {fileID: 8300000, guid: 7501112218d18654f9534e57f62df1f8, type: 3}
+  - npcName: 'Unknown Pirate '
+    text: Nor did I. Death is a relentless dancer, and as our hunger grows, death
+      grows closer.
+    audioClip: {fileID: 8300000, guid: 91401abf02d13644a8ae5b5c96ce1d4c, type: 3}
+  - npcName: Unknown Pirate 2
+    text: "Aye! I danced with death and death keeps me near.\_"
+    audioClip: {fileID: 8300000, guid: bd675578a975605488dc19010c298445, type: 3}
+  - npcName: 'Unknown Pirate '
+    text: I saw, we saw, you might see.
+    audioClip: {fileID: 8300000, guid: 981198e2c5ecfa3479797c07dd7141c3, type: 3}
+  interactionDistance: 5
