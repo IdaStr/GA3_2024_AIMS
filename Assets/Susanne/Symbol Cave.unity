@@ -188,7 +188,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13063d5b670c8ef43accb6073039b2e6, type: 3}
---- !u!1001 &6012691013075326101
+--- !u!1001 &6753826373303897045
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -196,58 +196,58 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4516609578265592051, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
-      propertyPath: m_Name
-      value: Symbol Cave
-      objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.229993
       objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 8.91
       objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalPosition.z
       value: 118.159966
       objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7276106668842197249, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+    - target: {fileID: 664260417677947012, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418197860802174193, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
+      propertyPath: m_Name
+      value: Symbol Cave
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ffc9794e00a7d7428ee02ffb4866ef5, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 8fbb200ed1294304d8eadc9de7201a1f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1584716186}
-  - {fileID: 6012691013075326101}
+  - {fileID: 6753826373303897045}
