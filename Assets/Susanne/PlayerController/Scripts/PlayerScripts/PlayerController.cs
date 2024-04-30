@@ -127,10 +127,11 @@ public class PlayerController : MonoBehaviour
     {
         //place the player
 
+        controller.gameObject.SetActive(false);
         controller.Move(destination.position - transform.position);
         transform.SetPositionAndRotation(destination.position, destination.rotation);
         cameraT.SetPositionAndRotation(destination.position, destination.rotation);
-
+        controller.gameObject.SetActive(true);
 
         Debug.Log("dest " + destination.name);
 
