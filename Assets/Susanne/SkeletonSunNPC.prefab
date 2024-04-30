@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3333516760921240146
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 170.95839
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 170.95839
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 170.95839
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.023198
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.8823
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_Name
+      value: SkeletonSunNPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 46e0c3ed3ad6f4d4c95f2a0cd843610d, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1975731643936797040, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1138050891977440084}
+    - targetCorrespondingSourceObject: {fileID: 1975731643936797040, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2029099297475443383}
+  m_SourcePrefab: {fileID: 100100000, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+--- !u!1 &3830367160012407586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1975731643936797040, guid: fae1f26f5f100d744b8ca37237d1409f, type: 3}
+  m_PrefabInstance: {fileID: 3333516760921240146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1138050891977440084
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830367160012407586}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.013149617
+  m_Height: 0.026299234
+  m_Direction: 1
+  m_Center: {x: 0.0029978014, y: 0.0065177167, z: -0.00027426484}
+--- !u!114 &2029099297475443383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830367160012407586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917c71644d8f753458d66266717bd6ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionButton: {fileID: 0}
+  interactionText: {fileID: 0}
+  dialogues:
+  - npcName: Skeleton
+    text: Here is my demise, the sun I saw, now death sees me.
+    audioClip: {fileID: 8300000, guid: a518259bdf3c9af468e173177c1f5562, type: 3}
+  interactionDistance: 5
