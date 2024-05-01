@@ -1,6 +1,6 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -28,13 +28,15 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        UnlockMouse(); 
     }
 
     void Pause()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f; // Pause the game
+        Time.timeScale = 0f; 
         isPaused = true;
+        UnlockMouse(); 
     }
 
     public void QuitGame()
