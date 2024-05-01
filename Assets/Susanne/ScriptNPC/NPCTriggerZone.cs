@@ -7,7 +7,7 @@ public class TriggerCounter : MonoBehaviour
 
     private void Start()
     {
-        // Hide the object initially
+      
         if (objectToAppear != null)
         {
             objectToAppear.SetActive(false);

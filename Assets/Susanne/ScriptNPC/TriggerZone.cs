@@ -5,7 +5,7 @@ using UnityEngine;
 public class TriggerZone : MonoBehaviour
 {
     public AudioClip triggerSound;
-    public string message = "You entered the trigger zone.";
+    public string message = "YOH";
 
     private bool hasTriggered = false;
 
@@ -13,13 +13,13 @@ public class TriggerZone : MonoBehaviour
     {
         if (other.CompareTag("Player") && !hasTriggered)
         {
-            // Play the trigger sound
+       
             AudioSource.PlayClipAtPoint(triggerSound, transform.position);
 
-            // Display the message
+       
             Debug.Log(message);
 
-            // Set hasTriggered to true to prevent multiple triggers
+
             hasTriggered = true;
         }
     }
