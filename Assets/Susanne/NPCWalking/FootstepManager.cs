@@ -1,36 +1,33 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FootstepManager : MonoBehaviour
 {
-    public AudioClip[] footstepSounds; 
+    public AudioClip[] footstepSounds;
     [Range(0.1f, 1.0f)]
-    public float footstepInterval = 0.5f; 
+    public float footstepInterval = 0.5f;
 
     private AudioSource audioSource;
     private bool isPlayingFootsteps = false;
     private float footstepTimer = 0f;
+    private float volume = 1.0f;
 
     void Start()
     {
-       
         audioSource = gameObject.AddComponent<AudioSource>();
 
         if (audioSource == null)
         {
             Debug.LogError("Failed to add AudioSource component. FootstepManager cannot play footstep sounds.");
-            enabled = false; 
+            enabled = false;
         }
 
-        
         audioSource.loop = false;
         audioSource.playOnAwake = false;
     }
 
     void Update()
     {
-        
         footstepTimer += Time.deltaTime;
     }
 
@@ -43,9 +40,15 @@ public class FootstepManager : MonoBehaviour
             if (footstepSound != null)
             {
                 audioSource.clip = footstepSound;
+                audioSource.volume = volume; // Set volume here
                 audioSource.Play();
             }
         }
+    }
+
+    public void SetVolume(float newVolume)
+    {
+        volume = newVolume;
     }
 
     public void StartFootsteps()
@@ -69,7 +72,7 @@ public class FootstepManager : MonoBehaviour
         if (isPlayingFootsteps && footstepTimer >= footstepInterval)
         {
             PlayFootstepSound();
-            footstepTimer = 0f; 
+            footstepTimer = 0f;
         }
     }
 }
