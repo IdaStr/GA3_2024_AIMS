@@ -10,7 +10,7 @@ using TMPro;
 
 public class EndingSCREENScriptIda : MonoBehaviour
 {
-    public Canvas EndCredits;
+    public GameObject EndCredits;
 
 
     private void OnTriggerEnter(Collider other)
@@ -23,12 +23,7 @@ public class EndingSCREENScriptIda : MonoBehaviour
         }
 
         {
-            if (other.tag == "Player")
-            {
-                Debug.Log("Canvas should activate if youre not an idiot Ida");
-                EndCredits.enabled = false;
-
-            }
+            EndCredits.SetActive (true);
             
 
 
