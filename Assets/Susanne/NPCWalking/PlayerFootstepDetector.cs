@@ -14,7 +14,7 @@ public class PlayerFootstepDetector : MonoBehaviour
         footstepManager = GetComponent<FootstepManager>();
         if (footstepManager == null)
         {
-            Debug.LogError("FootstepManager component not found on Player GameObject.");
+            Debug.LogError("Girl... You forgot the manager");
         }
     }
 

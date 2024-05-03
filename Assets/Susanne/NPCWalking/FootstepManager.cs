@@ -18,7 +18,7 @@ public class FootstepManager : MonoBehaviour
 
         if (audioSource == null)
         {
-            Debug.LogError("Failed to add AudioSource component. FootstepManager cannot play footstep sounds.");
+            Debug.LogError("Hello Susanne, Audio ain't playing!");
             enabled = false;
         }
 
@@ -40,7 +40,7 @@ public class FootstepManager : MonoBehaviour
             if (footstepSound != null)
             {
                 audioSource.clip = footstepSound;
-                audioSource.volume = volume; // Set volume here
+                audioSource.volume = volume; 
                 audioSource.Play();
             }
         }

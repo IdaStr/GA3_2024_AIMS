@@ -21,7 +21,7 @@ public class CircularMovement : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Transform component is null in CircularMovement script.");
+            Debug.LogError("Is the transform working? I set it to null");
         }
     }
 

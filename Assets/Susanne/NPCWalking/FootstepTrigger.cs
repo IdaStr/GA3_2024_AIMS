@@ -13,7 +13,7 @@ public class FootstepTrigger : MonoBehaviour
             FootstepManager footstepManager = other.GetComponent<FootstepManager>();
             if (footstepManager != null)
             {
-                footstepManager.SetVolume(volume); // Update here to set the volume
+                footstepManager.SetVolume(volume); 
                 footstepManager.footstepSounds = footstepSounds;
             }
         }
